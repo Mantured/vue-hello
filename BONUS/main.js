@@ -9,10 +9,14 @@ const app = new Vue(
         el: '#app',
         data: {
             message: 'Hello World',
+            imageSource: "",
+            userInput:""
+
         },
         methods: {
             myFunction: function () {
-                document.querySelector('h1').innerHTML = `<img img-fluid src="https://picsum.photos/200/300" alt="lorem picsum image">`;
+                this.imageSource = "";
+                this.userInput = "";
             }
         }
     }
